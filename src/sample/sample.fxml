@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="341.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <TitledPane animated="false" text="FeedBack">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="397.0">
+               <children>
+                      <Pane prefHeight="244.0" prefWidth="389.0">
+                          <children>
+                              <TextField fx:id="name" layoutX="25.0" layoutY="37.0" prefHeight="26.0" prefWidth="348.0" promptText="Write Your Name Here..." />
+                              <ComboBox fx:id="lectures" layoutX="27.0" layoutY="230.0" prefHeight="28.0" prefWidth="341.0" promptText="Select Lecture" />
+                        <Label layoutX="25.0" layoutY="19.0" text="User Name" />
+                        <Label layoutX="25.0" layoutY="72.0" text="Feedback" />
+                        <Label layoutX="25.0" layoutY="214.0" text="Lecture" />
+                        <TextArea fx:id="textArea" layoutX="27.0" layoutY="89.0" prefHeight="122.0" prefWidth="346.0" promptText="Write Something Here..." />
+                          </children>
+                      </Pane>
+                        <Button fx:id="submit" layoutX="51.0" layoutY="270.0" mnemonicParsing="false" onAction="#onClickSubmit" prefHeight="32.0" prefWidth="136.0" text="Submit" />
+                        <Button fx:id="clear" layoutX="199.0" layoutY="271.0" mnemonicParsing="false" onAction="#onClickClear" prefHeight="32.0" prefWidth="136.0" text="Clear" />
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+    </children>
+</VBox>
